@@ -13,7 +13,7 @@ installTheme(){
     echo "Installing theme..."
     cd /var/www/pterodactyl
     rm -r MinecraftPurpleTheme
-    git clone https://github.com/Angelillo15/MinecraftPurpleTheme.git
+    git clone https://github.com/krisbotz1/MinecraftPurpleTheme.git
     cd MinecraftPurpleTheme
     rm /var/www/pterodactyl/resources/scripts/MinecraftPurpleTheme.css
     rm /var/www/pterodactyl/resources/scripts/index.tsx
@@ -47,7 +47,7 @@ installThemeQuestion(){
 }
 
 repair(){
-    bash <(curl https://raw.githubusercontent.com/Angelillo15/MinecraftPurpleTheme/main/repair.sh)
+    bash <(curl https://raw.githubusercontent.com/krisbotz1/MinecraftPurpleTheme/main/repair.sh)
 }
 
 restoreBackUp(){
