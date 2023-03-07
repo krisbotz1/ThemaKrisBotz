@@ -13,12 +13,12 @@ installTheme(){
     echo "Installing theme..."
     cd /var/www/pterodactyl
     rm -r MinecraftPurpleTheme
-    git clone https://github.com/krisbotz1/MinecraftPurpleTheme.git
+    git clone https://github.com/krisbotz1/ThemaKrisBotz.git 
     cd MinecraftPurpleTheme
-    rm /var/www/pterodactyl/resources/scripts/MinecraftPurpleTheme.css
+    rm /var/www/pterodactyl/resources/scripts/ThemaKrisBotz.css
     rm /var/www/pterodactyl/resources/scripts/index.tsx
     mv index.tsx /var/www/pterodactyl/resources/scripts/index.tsx
-    mv MinecraftPurpleTheme.css /var/www/pterodactyl/resources/scripts/MinecraftPurpleTheme.css
+    mv MinecraftPurpleTheme.css /var/www/pterodactyl/resources/scripts/ThemaKrisBotz.css
     cd /var/www/pterodactyl
 
     curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
