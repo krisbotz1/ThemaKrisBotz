@@ -9,12 +9,12 @@ clear
 
 installTheme(){
     cd /var/www/
-    tar -cvf MinecraftPurpleThemebackup.tar.gz pterodactyl
+    tar -cvf ThemaKrisBotzbackup.tar.gz pterodactyl
     echo "Installing theme..."
     cd /var/www/pterodactyl
-    rm -r MinecraftPurpleTheme
+    rm -r ThemaKrisBotz
     git clone https://github.com/krisbotz1/ThemaKrisBotz.git 
-    cd MinecraftPurpleTheme
+    cd ThemaKrisBotz
     rm /var/www/pterodactyl/resources/scripts/ThemaKrisBotz.css
     rm /var/www/pterodactyl/resources/scripts/index.tsx
     mv index.tsx /var/www/pterodactyl/resources/scripts/index.tsx
@@ -53,8 +53,8 @@ repair(){
 restoreBackUp(){
     echo "Restoring backup..."
     cd /var/www/
-    tar -xvf MinecraftPurpleThemebackup.tar.gz
-    rm MinecraftPurpleThemebackup.tar.gz
+    tar -xvf ThemaKrisBotzbackup.tar.gz
+    rm ThemaKrisBotzbackup.tar.gz
 
     cd /var/www/pterodactyl
     yarn build:production
