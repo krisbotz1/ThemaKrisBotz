@@ -18,7 +18,7 @@ installTheme(){
     rm /var/www/pterodactyl/resources/scripts/ThemaKrisBotz.css
     rm /var/www/pterodactyl/resources/scripts/index.tsx
     mv index.tsx /var/www/pterodactyl/resources/scripts/index.tsx
-    mv MinecraftPurpleTheme.css /var/www/pterodactyl/resources/scripts/ThemaKrisBotz.css
+    mv ThemaKrisBotz.css /var/www/pterodactyl/resources/scripts/ThemaKrisBotz.css
     cd /var/www/pterodactyl
 
     curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
