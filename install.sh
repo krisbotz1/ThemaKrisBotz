@@ -47,7 +47,7 @@ installThemeQuestion(){
 }
 
 repair(){
-    bash <(curl https://raw.githubusercontent.com/bahan/ThemaKrisBotz/main/repair.sh)
+    bash <(curl https://raw.githubusercontent.com/bahanbro/ThemaKrisBotz/main/repair.sh)
 }
 
 restoreBackUp(){
